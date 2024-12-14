@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Netflix</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Move Google script here and add onload handler -->
+  <script>
+    function initializeGoogleSignIn() {
+      // This will be called when the Google script is loaded
+      const event = new Event('googleSignInLoaded');
+      window.dispatchEvent(event);
+    }
+  </script>
+  <script src="https://accounts.google.com/gsi/client" async defer onload="initializeGoogleSignIn()"></script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

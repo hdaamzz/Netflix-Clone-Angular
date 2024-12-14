@@ -1,0 +1,155 @@
+.swiper-slide {
+  transition: all 300ms ease-in-out;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.desc {
+  transition: all 300ms ease-in-out;
+  background-color: #181818c4;
+  height: 170px;
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+}
+
+.desc:hover {
+  transition: all 300ms ease-in-out;
+}
+
+.desc.tv {
+  height: 60px;
+}
+
+.swiper-slide img {
+  border-radius: 5px;
+  cursor: pointer;
+  width: 220px !important;
+  height: 300px !important;
+  object-fit: cover;
+}
+
+.swiper-slide img:active {
+  cursor: grabbing;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.5);
+  transition: all 300ms ease-in-out;
+  transition-delay: 300ms;
+  z-index: 1;
+}
+
+.swiper-slide:hover img {
+  transition-delay: 300ms;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 599px) {
+  .swiper-slide img {
+    max-width: 14rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .swiper-slide img {
+    max-width: 10.5rem;
+    border-radius: 2px;
+  }
+}
+
+
+// :host {
+//   display: block;
+//   width: 100%;
+// }
+
+// .carousel-container {
+//   position: relative;
+//   padding: 20px 0;
+  
+//   .carousel-title {
+//     margin-bottom: 1rem;
+//     padding: 0 1rem;
+//   }
+// }
+
+// .swiper-container {
+//   width: 100%;
+//   padding: 20px 0;
+// }
+
+// .swiper-slide {
+//   transition: transform 0.3s ease;
+  
+//   &:hover {
+//     transform: scale(1.05);
+//     z-index: 1;
+//   }
+// }
+
+// .content-card {
+//   position: relative;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 4px;
+//   overflow: hidden;
+  
+//   img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+  
+//   .content-info {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     padding: 1rem;
+//     background: linear-gradient(transparent, rgba(0,0,0,0.8));
+//     color: white;
+    
+//     h3 {
+//       margin: 0 0 0.5rem;
+//       font-size: 1rem;
+//     }
+    
+//     p {
+//       margin: 0;
+//       font-size: 0.875rem;
+//       opacity: 0.8;
+//     }
+//   }
+// }
+
+// // Navigation styles
+// .swiper-button-next,
+// .swiper-button-prev {
+//   color: white;
+  
+//   &:after {
+//     font-size: 24px;
+//   }
+  
+//   &:hover {
+//     opacity: 0.8;
+//   }
+// }
+
+// .swiper-pagination {
+//   &-bullet {
+//     background: white;
+//     opacity: 0.5;
+    
+//     &-active {
+//       opacity: 1;
+//     }
+//   }
+// }

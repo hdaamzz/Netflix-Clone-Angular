@@ -1,0 +1,19 @@
+<header class="bg-main dark-nav sticky top-0 flex items-center justify-between px-10">
+
+    <div class="flex gap-8">
+        <img width="110" src="assets/pngwing.com.png" alt="netflix-image">
+        <ul class="flex items-center" *ngFor="let item of navList">
+            <li class="text-neutral-200 cursor-pointer text-sm font-extralight hover:text-gray-600 transition-[1s]">{{item}}</li>
+        </ul>
+
+    </div>
+    <div class="text-white flex items-center gap-5">
+       <div class="flex items-center gap-2">
+        <a href=""><span>Welcome <strong>{{username}}</strong></span></a>
+        <img class="rounded-full" src="{{userImg}}" width="42px"  alt="userImg">
+       </div>
+        <span><strong>|</strong></span>
+        <a href="/">Sign Out</a>
+    </div>
+
+</header>
